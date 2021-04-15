@@ -24,7 +24,7 @@ const Dashboard = () => {
 		dispatch,
 		tasksUpToDate,
 		tasks,
-		stats,
+		stats: { tasks_completed, latest_tasks, total_tasks },
 		fetching,
 		fetchingStats,
 	} = useTaskContext();
@@ -85,21 +85,18 @@ const Dashboard = () => {
 			{tasks.length ? (
 				<>
 					<StatsContainer>
-						<Stats
-							total={stats.total_tasks}
-							completed={stats.tasks_completed}
-						/>
-						<Latest tasks={stats.latest_tasks} />
+						<Stats total={total_tasks} completed={tasks_completed} />
+						<Latest tasks={latest_tasks} />
 						<Report
 							data={[
 								{
 									title: "Completed",
-									value: stats.tasks_completed,
+									value: tasks_completed,
 									color: colors.primary,
 								},
 								{
-									title: "Total",
-									value: stats.total_tasks,
+									title: "Pending",
+									value: total_tasks - tasks_completed,
 									color: colors.secondary,
 								},
 							]}

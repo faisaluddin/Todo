@@ -6,7 +6,7 @@ import { Card } from "../styles";
 const Report = ({ data }) => {
 	return (
 		<Card>
-			<PieChart data={data} label={({ dataEntry }) => dataEntry.value} />
+			<PieChart data={data} radius={PieChart.defaultProps.radius - 7} />
 		</Card>
 	);
 };
