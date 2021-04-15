@@ -1,7 +1,7 @@
 export function baseUrl() {
 	if (process.env.NODE_ENV === "development")
 		return "http://127.0.0.1:8000/api/";
-	else return window.location.protocol + "//" + window.location.host + "/api/";
+	else return "https://faisal-todo.herokuapp.com/api/"; // My Custom Django backend deployed in heroku
 }
 
 // export const BASE_URL = "http://192.168.43.17:8000/api/";
