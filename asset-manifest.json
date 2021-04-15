@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Todo/static/css/main.8ff2700d.chunk.css",
+    "main.js": "/Todo/static/js/main.174f8b51.chunk.js",
+    "main.js.map": "/Todo/static/js/main.174f8b51.chunk.js.map",
+    "runtime-main.js": "/Todo/static/js/runtime-main.4fdaeb25.js",
+    "runtime-main.js.map": "/Todo/static/js/runtime-main.4fdaeb25.js.map",
+    "static/js/2.096dff7a.chunk.js": "/Todo/static/js/2.096dff7a.chunk.js",
+    "static/js/2.096dff7a.chunk.js.map": "/Todo/static/js/2.096dff7a.chunk.js.map",
+    "static/js/3.abe4b669.chunk.js": "/Todo/static/js/3.abe4b669.chunk.js",
+    "static/js/3.abe4b669.chunk.js.map": "/Todo/static/js/3.abe4b669.chunk.js.map",
+    "index.html": "/Todo/index.html",
+    "static/css/main.8ff2700d.chunk.css.map": "/Todo/static/css/main.8ff2700d.chunk.css.map",
+    "static/js/2.096dff7a.chunk.js.LICENSE.txt": "/Todo/static/js/2.096dff7a.chunk.js.LICENSE.txt",
+    "static/media/profile.jpg": "/Todo/static/media/profile.c4423886.jpg",
+    "static/media/spinner.222a80ed.gif": "/Todo/static/media/spinner.222a80ed.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4fdaeb25.js",
+    "static/js/2.096dff7a.chunk.js",
+    "static/css/main.8ff2700d.chunk.css",
+    "static/js/main.174f8b51.chunk.js"
+  ]
+}
