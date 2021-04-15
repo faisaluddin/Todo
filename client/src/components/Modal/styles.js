@@ -30,6 +30,7 @@ export const Close = styled.span`
 	float: right;
 	font-size: 28px;
 	font-weight: bold;
+	margin-left: auto;
 	&:hover {
 		color: #000;
 		text-decoration: none;

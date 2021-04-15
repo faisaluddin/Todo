@@ -59,9 +59,11 @@ const Dashboard = () => {
 	if (fetching || fetchingStats) return <Spinner />;
 	return (
 		<>
-			<Modal open={modalOpen} closeModal={setModalOpen}>
+			<Modal
+				open={modalOpen}
+				closeModal={setModalOpen}
+				title={isUpdate ? "Update Task" : "+ New Task"}>
 				<form onSubmit={e => handleSubmit(e)}>
-					<Title>{isUpdate ? "Update Task" : "+ New Task"}</Title>
 					<Input
 						placeholder="Task name"
 						required
