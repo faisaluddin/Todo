@@ -26,10 +26,6 @@ class UserLogin(views.ObtainAuthToken):
         user = serializer.validated_data['user']
         token, created = Token.objects.get_or_create(user=user)
 
-        if not created:
-            token.delete()
-            token = Token.objects.create(user=user)
-
         token = Token.objects.get(key=token)
         update_last_login(None, user)
         return Response({'token': token.key, 'user': UserSerializer(user).data})
